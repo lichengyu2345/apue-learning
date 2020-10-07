@@ -1,6 +1,8 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.14)
 
-project(apue_lib)
+set(target_name "apue_lib")
 
-add_library(apue_lib error.c errorlog.c)
+add_library(${target_name} error.c errorlog.c)
+
+target_include_directories(${target_name} INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
 

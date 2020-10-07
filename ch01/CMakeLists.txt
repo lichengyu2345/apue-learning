@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8)
+cmake_minimum_required (VERSION 3.14)
 
 project(apue)
 
@@ -8,5 +8,4 @@ set(target_name "1.4")
 list(APPEND my_srcs "1.4.c")
 add_executable(${target_name} ${my_srcs})
 
-target_include_directories(${target_name} PUBLIC apue_lib)
-target_link_libraries(${target_name} apue_lib)
+target_link_libraries(${target_name} PUBLIC apue_lib)
