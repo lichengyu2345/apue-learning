@@ -4,8 +4,8 @@ project(apue)
 
 add_subdirectory(apue_lib)
 
-set(target_name "1.3")
-list(APPEND my_srcs "1.3.c")
+set(target_name "1.4")
+list(APPEND my_srcs "1.4.c")
 add_executable(${target_name} ${my_srcs})
 
 target_include_directories(${target_name} PUBLIC apue_lib)
